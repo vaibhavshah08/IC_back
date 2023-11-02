@@ -20,8 +20,8 @@ export class ChatGPTService {
     @InjectRepository(UserEntity) private userRepository: Repository<UserEntity>)
   {
     const configuration = new Configuration({
-      // organization: 'org-yGboeUchk2VkSwL82AHp8ZvW',
-      apiKey: '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',
+      // organization: 'your-orgnizarion-id',
+      apiKey: 'your-api-key',
   });
   this.openAiAPi = new OpenAIApi(configuration);
   }
